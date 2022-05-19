@@ -5,5 +5,5 @@ Este repositório é um projeto do bootcamp da DIO para compartillhar conhecimen
 
 ### Links úteis:
 
-[O que é BLOB e como funciona?](../Aulas/Blob.md)
+[O que é BLOB e como funciona?](./Aulas/Blob.md)
 

@@ -5,6 +5,15 @@
 
 Este repositório é um projeto do bootcamp da DIO para compartillhar conhecimentos adquiridos neste programa
 
+### Projetos desenvolvidos neste bootcamp:
+
+<div style="display: flex; align-items: center; justify-content: center;; flex-direction: column; background: white; width: 410px; padding: 10px; border-radius: 10px">
+<img style="border-radius: 10px" src="./images/contador_javascript.gif" alt="Animação da tela do projeto contador de numeros com JavaScript">
+<h3 style="color: darkblue; "><b>Projeto Contador com JavaScript</b></h3>
+</div>
+
+
+#
 ### Links úteis:
 
 [O que é BLOB e como funciona?](./aulas/Blob.md)

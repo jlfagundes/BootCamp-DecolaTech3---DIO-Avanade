@@ -5,3 +5,8 @@ function increment() {
   currentNumber = currentNumber + 1;
   elementCurrentNumber.innerHTML = currentNumber;
 }
+
+function decrement() {
+  currentNumber = currentNumber - 1;
+  elementCurrentNumber.innerHTML = currentNumber;
+}

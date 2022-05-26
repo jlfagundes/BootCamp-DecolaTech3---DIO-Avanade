@@ -1,6 +1,7 @@
 // step 1 - criar classe ContaBancaria começa com letra maiúscula
 // step 2 - dentro da classe ContaBancaria construa o getter e o setter do saldo
 // step 3 - criar os metodos sacar e depositar
+// step 4 - criar classe filha ContaCorrente que vai ter cartão de crédito
 
 class ContaBancaria {
   constructor(agencia, numero, tipo, saldo) {
@@ -31,5 +32,13 @@ class ContaBancaria {
   depositar(valor) {
     this._saldo = (this._saldo + valor);
     return this._saldo;
+  }
+}
+
+class ContaCorrente {
+  constructor(agencia, numero, saldo, cartaoCredito) {
+    super(agencia, numero, saldo); // mandar o que receber para classe pai que é ContaBancaria
+    this.tipo = 'corrente'; // já seta o tipo de conta
+    this.cartaoCredito = cartaoCredito
   }
 }

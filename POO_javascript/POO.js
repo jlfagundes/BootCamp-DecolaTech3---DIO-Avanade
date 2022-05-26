@@ -4,6 +4,7 @@
 // step 4 - criar classe filha ContaCorrente que vai ter cartão de crédito
 // step 5 - criar o get e o set do cartaoCredito
 // step 6 - criar clase ContaPoupanca e ContaUniversitaria herdando de ContaCorrente
+// step 7 - o saque da ContaUniversitaria seja menor que 500,00
 
 class ContaBancaria {
   constructor(agencia, numero, tipo, saldo) {
@@ -64,5 +65,15 @@ class ContaUniversitaria {
   constructor(agencia, numero, saldo) {
     super(agencia, numero, saldo);
     this.tipo = 'poupanca';
+  }
+
+  sacar(valor) {
+    limiteSaque = valor <= 500;
+    temSaldo = valor < this._saldo;
+    if (limiteSaque && temSaldo) {
+      this._saldo = (this._saldo - valor);
+    } else {
+      return 'Não foi possivel realizar operação'
+    }
   }
 }

@@ -33,3 +33,7 @@ function validaArray(arr, num) {
   }
 }
 
+// console.log(validaArray());
+// console.log(validaArray(5, 5));
+// console.log(validaArray([], "ze"));
+// console.log(validaArray([], 5));

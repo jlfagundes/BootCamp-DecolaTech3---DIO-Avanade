@@ -2,6 +2,7 @@
 // 2 - validações dos parametros se existem
 // 3 - validar se array é do tipo object
 // 4 - validar se num é do tipo number
+// 5 - verificar se tamanho do arr é diferente de num
 function validaArray(arr, num) {
   if (!arr && !num) throw new ReferenceError('Enviar os parâmetros');
 
@@ -9,7 +10,7 @@ function validaArray(arr, num) {
 
   if (typeof num !== 'number') throw new TypeError('Numero precisa ser do tipo number');
 
-  
+  if (arr.length !== num) throw new RangeError('tamanho do array inválido');
 
   return;
 }

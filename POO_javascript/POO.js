@@ -5,13 +5,14 @@
 // step 5 - criar o get e o set do cartaoCredito
 // step 6 - criar clase ContaPoupanca e ContaUniversitaria herdando de ContaCorrente
 // step 7 - o saque da ContaUniversitaria seja menor que 500,00
+// step 8 - integrar com HTML
 
 class ContaBancaria {
   constructor(agencia, numero, tipo, saldo) {
     this.agencia = agencia;
     this.numero = numero;
     this.tipo = tipo;
-    this._saldo = saldo; // quando vai usar no getter ou setter colo o "_" antes para não confundir com propriedade
+    this._saldo = 0; // quando vai usar no getter ou setter colo o "_" antes para não confundir com propriedade
   }
 
   get saldo() {
@@ -38,9 +39,9 @@ class ContaBancaria {
   }
 }
 
-class ContaCorrente {
-  constructor(agencia, numero, saldo, cartaoCredito) {
-    super(agencia, numero, saldo); // mandar o que receber para classe pai que é ContaBancaria
+class ContaCorrente extends ContaBancaria {
+  constructor(agencia, numero, cartaoCredito) {
+    super(agencia, numero); // mandar o que receber para classe pai que é ContaBancaria
     this.tipo = 'corrente'; // já seta o tipo de conta
     this._cartaoCredito = cartaoCredito
   }
@@ -54,16 +55,16 @@ class ContaCorrente {
   }
 }
 
-class ContaPoupanca {
-  constructor(agencia, numero, saldo) {
-    super(agencia, numero, saldo);
+class ContaPoupanca extends ContaBancaria {
+  constructor(agencia, numero) {
+    super(agencia, numero);
     this.tipo = 'poupanca';
   }
 }
 
-class ContaUniversitaria {
-  constructor(agencia, numero, saldo) {
-    super(agencia, numero, saldo);
+class ContaUniversitaria extends ContaBancaria {
+  constructor(agencia, numero) {
+    super(agencia, numero);
     this.tipo = 'poupanca';
   }
 

@@ -3,6 +3,7 @@
 // step 3 - criar os metodos sacar e depositar
 // step 4 - criar classe filha ContaCorrente que vai ter cartão de crédito
 // step 5 - criar o get e o set do cartaoCredito
+// step 6 - criar clase ContaPoupanca e ContaUniversitaria herdando de ContaCorrente
 
 class ContaBancaria {
   constructor(agencia, numero, tipo, saldo) {
@@ -49,5 +50,19 @@ class ContaCorrente {
 
   set cartaoCredito(valor) {
     this._cartaoCredito = valor;
+  }
+}
+
+class ContaPoupanca {
+  constructor(agencia, numero, saldo) {
+    super(agencia, numero, saldo);
+    this.tipo = 'poupanca';
+  }
+}
+
+class ContaUniversitaria {
+  constructor(agencia, numero, saldo) {
+    super(agencia, numero, saldo);
+    this.tipo = 'poupanca';
   }
 }

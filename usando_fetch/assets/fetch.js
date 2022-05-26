@@ -23,7 +23,7 @@ const loadImg = async () => {
 }
 
 // criando um listener no botão
-btnChangeCatElement.addEventListener('click', loadImg())
+btnChangeCatElement.addEventListener('click', loadImg)
 
 // para a página já iniciar com uma imagem
 loadImg();

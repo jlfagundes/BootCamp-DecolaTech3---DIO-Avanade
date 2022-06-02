@@ -12,6 +12,10 @@ Este repositório é um projeto do bootcamp da DIO para compartillhar conhecimen
 |:----------:|:---------:|:---------:|
 | <img style="border-radius: 10px" src="./images/contador_javascript.gif" alt="Animação da tela do projeto contador de numeros com JavaScript"> |  <img style="border-radius: 10px" src="./images/project_consumindo_API.gif" alt="Animação da tela do projeto consumindo API com JavaScript"> | <img style="border-radius: 10px" src="./images/projeto_dark-mode.gif" alt="Animação da tela do projeto Dark-Mode com JavaScript">
 
+| Projeto Perfil GitHub com React Native |  | Projeto Lanterna com React Native
+|:----------:|:---------:|:---------:|
+| <img style="border-radius: 10px" src="./images/perfil.png" widht=150 alt="Imagem da tela do projeto Perfil GitHub com React Native"> |   | <img style="border-radius: 10px" widht=150 src="./images/app.gif" alt="Animação da tela do projeto Lanterna com React Native">
+
 
 #
 ### Links úteis:
